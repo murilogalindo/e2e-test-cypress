@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-02T22:21:38.485Z",
+    "end": "2025-06-02T22:21:45.898Z",
+    "duration": 7413,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "91410cb8-7bfb-4d2b-8746-b47d30684a4e",
+      "title": "",
+      "fullFile": "cypress/e2e/sortableTest.spec.cy.js",
+      "file": "cypress/e2e/sortableTest.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d2bb3ee-c1da-46e2-8e23-94518c2ee67a",
+          "title": "Teste de ordenação com drag and drop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve mover o \"Six\" para o fim da lista",
+              "fullTitle": "Teste de ordenação com drag and drop Deve mover o \"Six\" para o fim da lista",
+              "timedOut": null,
+              "duration": 6989,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_sortablePage.default.acessarSite();\n_sortablePage.default.acessarMenuInteractions();\n_sortablePage.default.acessarSubmenuSortable();\n_sortablePage.default.ordenarElementos();\n_sortablePage.default.validarOrdemEsperada();",
+              "err": {},
+              "uuid": "7631aaf1-a4dd-4e8e-ae58-ec47f4ab3115",
+              "parentUUID": "0d2bb3ee-c1da-46e2-8e23-94518c2ee67a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7631aaf1-a4dd-4e8e-ae58-ec47f4ab3115"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6989,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

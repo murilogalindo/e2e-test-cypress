@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-02T22:20:50.406Z",
+    "end": "2025-06-02T22:21:14.025Z",
+    "duration": 23619,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3d4cb37d-954e-4995-87f6-a825ed325dc6",
+      "title": "",
+      "fullFile": "cypress/e2e/formTest.spec.cy.js",
+      "file": "cypress/e2e/formTest.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5e542f54-af31-486c-b2d7-e13dfef6f9ca",
+          "title": "Formulário de prática - DemoQA",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher e submeter o formulário com sucesso",
+              "fullTitle": "Formulário de prática - DemoQA Deve preencher e submeter o formulário com sucesso",
+              "timedOut": null,
+              "duration": 23441,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formPage.default.visit();\n_formPage.default.goToPracticeForm();\n_formPage.default.fillFormRandomly();\n_formPage.default.submitForm();\n_formPage.default.verifyPopupVisible();\n_formPage.default.closePopup();",
+              "err": {},
+              "uuid": "1ef436af-e7cf-4442-9198-082b7e0d0334",
+              "parentUUID": "5e542f54-af31-486c-b2d7-e13dfef6f9ca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1ef436af-e7cf-4442-9198-082b7e0d0334"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23441,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
