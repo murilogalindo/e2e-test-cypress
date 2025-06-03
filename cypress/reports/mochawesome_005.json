@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-06-03T01:29:20.904Z",
+    "end": "2025-06-03T01:30:20.628Z",
+    "duration": 59724,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c84fe8ed-7103-4e52-aee8-dd42baae2877",
+      "title": "",
+      "fullFile": "cypress/e2e/formTest.spec.cy.js",
+      "file": "cypress/e2e/formTest.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "98b9e9de-79dc-419a-99f3-d264fdf4ed9f",
+          "title": "Formulário de prática - DemoQA",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve preencher e submeter o formulário com sucesso",
+              "fullTitle": "Formulário de prática - DemoQA Deve preencher e submeter o formulário com sucesso",
+              "timedOut": null,
+              "duration": 59332,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_formPage.default.visit();\n_formPage.default.goToPracticeForm();\n_formPage.default.fillFormRandomly();\n_formPage.default.submitForm();\n_formPage.default.verifyPopupVisible();\n_formPage.default.closePopup();\n// Check if the home page loaded correctly\ncy.url().should('include', 'demoqa.com');\n_formPage.default.goToPracticeForm();\n// Verify if the form is visible\ncy.get('.practice-form-wrapper').should('be.visible');\n_formPage.default.fillFormRandomly();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"text\">Practic...</span>`\n\nThis element `<span.text>` is not visible because its parent `<div.element-list.collapse>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<span class=\"text\">Practic...</span>`\n\nThis element `<span.text>` is not visible because its parent `<div.element-list.collapse>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (https://demoqa.com/__cypress/runner/cypress_runner.js:147979:58)\n    at Object.isStrictlyVisible (https://demoqa.com/__cypress/runner/cypress_runner.js:147993:10)\n    at runAllChecks (https://demoqa.com/__cypress/runner/cypress_runner.js:114370:26)\n    at retryActionability (https://demoqa.com/__cypress/runner/cypress_runner.js:114438:16)\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://demoqa.com/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://demoqa.com/__cypress/runner/cypress_runner.js:146806:68)\n    at <unknown> (https://demoqa.com/__cypress/runner/cypress_runner.js:146747:14)\n    at tryCatcher (https://demoqa.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://demoqa.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://demoqa.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://demoqa.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://demoqa.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://demoqa.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://demoqa.com/__cypress/runner/cypress_runner.js:5420:46)",
+                "diff": null
+              },
+              "uuid": "97931c96-9bc1-42f5-a7a5-5310129fcdf6",
+              "parentUUID": "98b9e9de-79dc-419a-99f3-d264fdf4ed9f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "97931c96-9bc1-42f5-a7a5-5310129fcdf6"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 59332,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

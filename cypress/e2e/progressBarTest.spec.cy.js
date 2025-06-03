@@ -5,15 +5,22 @@ describe('Progress Bar - Widget DemoQA', () => {
     cy.visit('/');
   });
 
-  it('Deve iniciar, parar antes dos 25% e validar, depois completar e resetar', () => {
+  it('Must be start, stop before 25% and validate, after complete should be restarted', () => {
     progressBarPage.acessarMenuWidgets();
     progressBarPage.acessarSubmenuProgressBar();
 
-    // Inicia e para antes dos 25%
+    // Starts and stops before 25%
     progressBarPage.clicarStart();
     progressBarPage.esperarEAbrirAntesDos25();
 
-    // Inicia novamente e deixa até 100%, então reseta
+  
+    // Start again and let it reach 100%, then reset
     progressBarPage.esperar100EPararEResetar();
+
+    // Assert: Checks if the bar has been reset after reaching 100%
+    cy.get('#startStopButton').should('be.visible');
+      
+
+
   });
 });

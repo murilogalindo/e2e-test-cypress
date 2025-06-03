@@ -7,5 +7,10 @@ describe('Teste de ordenação com drag and drop', () => {
     sortablePage.acessarSubmenuSortable();
     sortablePage.ordenarElementos();
     sortablePage.validarOrdemEsperada();
+
+     // Validates that "Six" is now the last element in the list
+     cy.get('.vertical-list-container > div')
+     .last()
+     .should('contain.text', 'Six');
   });
 });
