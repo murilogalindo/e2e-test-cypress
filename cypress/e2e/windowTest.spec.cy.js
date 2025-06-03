@@ -1,7 +1,7 @@
 const windowsPage = require('../pages/windowsPage');
 
-describe('Teste de nova janela em demoqa.com', () => {
-  it('Deve abrir uma nova janela e validar a mensagem', () => {
+describe('New window test in demoqa.com', () => {
+  it('It should open a new window and validate the message', () => {
     cy.visit('https://demoqa.com/');
 
     windowsPage.acessarMenuPrincipal();

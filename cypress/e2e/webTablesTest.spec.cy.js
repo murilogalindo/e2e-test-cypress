@@ -5,7 +5,7 @@ describe('Web Tables - CRUD Testes', () => {
     webTablesPage.acessarMenuWebTables();
   });
 
-  it('Deve criar, editar e deletar um registro', () => {
+  it('Must create, edit and delete a record', () => {
     const email = 'murilo.galindo@example.com';
   
     webTablesPage.criarRegistro();

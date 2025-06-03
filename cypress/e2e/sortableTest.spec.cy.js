@@ -1,7 +1,7 @@
 import sortablePage from '../pages/sortablePage';
 
-describe('Teste de ordenação com drag and drop', () => {
-  it('Deve mover o "Six" para o fim da lista', () => {
+describe('Drag and drop sorting test', () => {
+  it('You should move "Six" to the end of the list', () => {
     sortablePage.acessarSite();
     sortablePage.acessarMenuInteractions();
     sortablePage.acessarSubmenuSortable();
