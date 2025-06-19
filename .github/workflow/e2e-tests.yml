@@ -1,8 +1,8 @@
 name: Cypress project E2E
 
-on:
-  push:
-    branches:
+on: push
+  
+branches:
       - main
  
 jobs:
