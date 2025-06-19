@@ -22,10 +22,12 @@ jobs:
         run: npm install
 
       - name: Run Cypress tests
-        run: npx cypress run --browser chrome --headless
+        run: 
+          nohup npm start &
+          npx wait-on http://localhost:3000
+          
 
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          CYPRESS_BASE_URL: 'http://localhost:3000'
-
+      - name: Run Cypress tests
+        run: npx cypress 
+     
      
